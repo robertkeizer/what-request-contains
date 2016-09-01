@@ -1,15 +1,56 @@
 <html>
 	<body>
 		<script src="jquery.min.js"></script>
+		<script src="clipboard.min.js"></script>
 		<script src="panel.js"></script>
 
-		<div>
-			<input type="text" id='search' /><br />
-			<button id='go'>Go</button>
+		<div id="header">
+			<div id="search_bar">
+				<input type="checkbox" id="regex" /><label for="regex">RegEx</label>
+				<input type="text" id='search' />
+				<button id="go">Go</button>
+				<button id="flush">Flush</button>
+				<!-- <button id="stop">Stop Listening</button> -->
+			</div>
+			<!-- <div id="advanced">
+				<table>
+					<tr>
+						<td class="header_cell">Search In</td>
+						<td><input type="checkbox" id="header_toggle" /><label for="header_toogle">Headers</label></td>
+						<td><input type="checkbox" id="content_toggle" checked /><label for="content_toggle">Content</label></td>
+					</tr>
+					<tr>
+						<td class="header_cell">Search For</td>
+						<td><input type="checkbox" id="json_toggle" /><label for="json_toggle">JSON</label></td>
+						<td><input type="checkbox" id="image_toggle" /><label for="content_toggle">Images</label></td>
+					</tr>
+					<tr>
+						<td class="header_cell">Return</td>
+						<td><input type="radio" name="return_form" value="text" id="return_text_toggle" /><label for="return_text_toggle">Text</label></td>
+						<td><input type="radio" name="return_form" value="object" id="return_object_toggle" /><label for="content_toggle">Request Object</label></td>
+					</tr>
+				</table>
+			</div> -->
 		</div>
 
-		<pre id='debug'>
-			
-		</pre>
+		<div id="content">
+			<h1>Request URLs</h1>
+			<ul id="req_list">
+
+			</ul>
+			Waiting for requests...
+			<br />
+			<br />
+			<h1>Search Results</h1>
+			<ul id="res_list">
+
+			</ul>
+			<div id="request">
+
+			</div>
+		</div>
+
+	<!-- Once done remove this -->
+		<pre id="debug"></pre>
 	</body>
 </html>
