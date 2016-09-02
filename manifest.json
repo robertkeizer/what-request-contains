@@ -1,7 +1,7 @@
 {
-	"name": "What Request Contains",
+	"name": "Get Req'd",
 	"version": "0.1",
 	"description": "Allows a developer to query for what network request contains a particular bit of data",
 	"devtools_page": "devtools.html",
-	"manifest_version": 2
+	"manifest_version": 3
 }
